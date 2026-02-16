@@ -1,0 +1,29 @@
+.banner {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 48px 16px;
+  align-content: end;
+  transition: all 0.3s ease;
+}
+
+.banner h1 {
+  font-size: 48px;
+  margin-bottom: 24px;
+}
+
+.banner p{
+  font-size: 12px;
+  max-width: 400px;
+}
+
+.banner:hover {
+  color: black;
+}
+
+.banner-link {
+  text-decoration: none;
+  color: inherit;
+}

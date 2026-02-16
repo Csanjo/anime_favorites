@@ -1,0 +1,43 @@
+.category-container {
+  text-align: center;
+  padding: 16px;
+}
+
+.category-container h2 {
+  font-size: 16px;
+}
+
+.anime-card-list {
+  display: flex;
+  padding: 24px 0;
+  gap: 24px;
+  overflow-x: auto;      
+  overflow-y: hidden;
+  padding-bottom: 10px;  
+}
+
+.anime-card img{
+  height: 250px;
+  width: 168px;
+  transition: transform 0.3s ease;
+}
+
+.anime-card img:hover,
+.sub-anime-card img:hover {
+  transform: scale(1.05);
+}
+
+.sub-anime-card-list {
+  display: flex;
+  padding: 24px 0;
+  gap: 22px;
+  overflow-x: auto;      
+  overflow-y: hidden;
+  padding-bottom: 10px;  
+}
+
+.sub-anime-card img{
+  height: 100px;
+  width: 72px;
+  transition: transform 0.3s ease;
+}

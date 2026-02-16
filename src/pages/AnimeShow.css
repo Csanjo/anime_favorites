@@ -1,0 +1,20 @@
+.anime-show {
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.anime-show h1{
+  font-size: 30px;
+  margin: 20px 0;
+}
+
+.anime-show p{
+  font-size: 16px;
+  margin: 20px 0;
+}
+
+.anime-show img {
+  height: 400px;
+  width: 280px;
+}
