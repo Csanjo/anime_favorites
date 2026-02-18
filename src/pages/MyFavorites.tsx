@@ -3,6 +3,8 @@ import { useEffect, useState } from "react"
 import { client } from "../lib/amplifyClient";
 import type { Schema } from "../../amplify/data/resource";
 import { getCurrentUser } from "aws-amplify/auth";
+import { Link } from "react-router-dom";
+import "../components/Category.css"
 
 
 type Favorite = Schema["Favorite"]["type"];
@@ -37,24 +39,25 @@ const MyFavorites = () => {
   }, []);
   return (
     <>
-      <div className="container">
-
+      <div className="category-container">
         <h1>My Favorites</h1>
-
-        {favorites.length === 0 ? (
-
-          <div>No Favorites...</div>
-
-        ) : (
-
-          favorites.map((fav) => (
-            <div key={fav.animeId}>
-              {fav.title}
-            </div>
-          ))
-
-        )}
-
+        <div className="anime-card-list">
+          {favorites.length === 0 ? (
+            <div>No Favorites...</div>
+          ) : (
+            favorites.map((fav) => (
+              <div key={fav.animeId} className="anime-card">
+                <Link to={`/anime/${fav.animeId}`}>
+                  <img
+                    src={fav.imageUrl ?? ""}
+                    alt={fav.title ?? "anime image"}
+                    loading="lazy"
+                    className="anime-image"
+                  />
+                </Link>
+              </div>
+          )))}
+        </div>
       </div>
     </>
   )

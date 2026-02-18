@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div>
       <Banner />
-        <MainCategory />
+        <MainCategory title="アクション"/>
         <SubCategory 
           genreId={2}
           title="アドベンチャー"

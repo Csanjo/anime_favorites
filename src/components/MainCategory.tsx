@@ -4,7 +4,11 @@ import { getAnimeByGenre } from "../api/animeGenre";
 import type { JikanAnime } from "../api/animeGenre";
 import { Link } from "react-router-dom"
 
-const MainCategory = () => {
+type Props = {
+  title: string;
+}
+
+const MainCategory = ({ title }:Props) => {
   const [animeList, setAnimeList] = useState<JikanAnime[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -14,12 +18,12 @@ const MainCategory = () => {
       .finally(() => setLoading(false))
   }, []);
 
-  if (loading) return <p>Loading アクション...</p>;
+  if (loading) return <p>Loading {title}...</p>;
 
   return  (
     <>
       <div className="category-container">
-        <h2>アクション</h2>
+        <h2>{title}</h2>
         <div className="anime-card-list">
           {animeList.map((anime) => (
               <div key={anime.mal_id} className="anime-card">
