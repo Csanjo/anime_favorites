@@ -4,27 +4,35 @@ import Home from "./pages/Home";
 import AnimeShow from "./pages/AnimeShow";
 import GenreShow from "./pages/GenreShow";
 import MyPage from "./pages/MyPage";
+import { Authenticator } from "@aws-amplify/ui-react";
+import "@aws-amplify/ui-react/styles.css";
 
 
 function App() {
   return (
-    <Router>
-      <div className="app-container">
-        <Navbar />
-        <main className="content">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/anime/:id" element={<AnimeShow />} />  
-            <Route path="/genres" element={<GenreShow/>} />  
-            <Route path="/mypage" element={<MyPage/>} />  
-          </Routes>
-        </main>
-        <footer className="footer">
-          ©2024 lh
-        </footer>
-    </div>
+    <Authenticator>
+      {({ signOut, user }) => (
 
-    </Router>
+        <Router>
+          <div className="app-container">
+            <Navbar user={user} signOut={signOut} />
+            <main className="content">
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/anime/:id" element={<AnimeShow />} />  
+                <Route path="/genres" element={<GenreShow/>} />  
+                <Route path="/mypage" element={<MyPage/>} />  
+              </Routes>
+            </main>
+            <footer className="footer">
+              ©2024 lh
+            </footer>
+        </div>
+
+        </Router>
+
+      )}
+    </Authenticator>
   )
 }
 

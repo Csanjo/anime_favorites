@@ -5,9 +5,16 @@ import { Link } from "react-router-dom"
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const Navbar = () => {
+type NavbarProps = {
+  user?: any;
+  signOut?: () => void;
+};
+
+const Navbar = ({ user, signOut}: NavbarProps) => {
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
+
+  const displayName = user?.signInDetails?.loginId || user?.username;
 
   return (
     <>
@@ -16,30 +23,19 @@ const Navbar = () => {
         <Link to={`/`}>
           <img src={ logo } alt="Logo" />
         </Link>
-        <span>こんにちはuserさん</span>
+        <span>こんにちは{displayName}さん</span>
         <Link to="/genres" className="banner-link">
           ジャンル一覧
         </Link>
       </div>
       <div className="navbar-right">
-        <div style={{ position: "relative" }}>
+        <div className="user-icon">
           <button onClick={() => setOpen(!open)}>
             <img src={ myPage } alt="" />
           </button>
 
           {open && (
-            <div
-              style={{
-                position: "absolute",
-                right: 0,
-                top: "100%",
-                background: "#000",
-                borderRadius: "6px",
-                padding: "8px",
-                minWidth: "160px",
-                boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
-              }}
-            >
+            <div className="user-popover">
               <button
                 className="user-info-btn"
                 onClick={() => {
@@ -49,6 +45,12 @@ const Navbar = () => {
                 style={{ width: "100%" }}
               >
                 アカウント情報
+              </button>
+              <button
+                className="user-info-btn"
+                onClick={signOut}
+              >
+                ログアウト
               </button>
             </div>
           )}

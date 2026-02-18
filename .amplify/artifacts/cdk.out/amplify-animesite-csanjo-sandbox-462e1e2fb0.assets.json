@@ -1,0 +1,34 @@
+{
+  "version": "48.0.0",
+  "files": {
+    "075f03ef0c86c75888ed53d563edd48d62db125240dee59b75fdf16baf5f816d": {
+      "displayName": "auth Nested Stack Template",
+      "source": {
+        "path": "amplifyanimesitecsanjosandbox462e1e2fb0auth2B9B06A0.nested.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "current_account-current_region-26ab98a1": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "075f03ef0c86c75888ed53d563edd48d62db125240dee59b75fdf16baf5f816d.json",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    },
+    "c9e48c805296bd388c4538bb034bc97451bf8091274b7f3463c4f391dbec0ce0": {
+      "displayName": "amplify-animesite-csanjo-sandbox-462e1e2fb0 Template",
+      "source": {
+        "path": "amplify-animesite-csanjo-sandbox-462e1e2fb0.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "current_account-current_region-e1187004": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "c9e48c805296bd388c4538bb034bc97451bf8091274b7f3463c4f391dbec0ce0.json",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}
