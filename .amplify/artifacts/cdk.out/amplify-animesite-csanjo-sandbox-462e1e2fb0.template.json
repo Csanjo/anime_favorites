@@ -33,6 +33,17 @@
     "oauthClientId",
     "groups"
    ]
+  },
+  "AWS::Amplify::GraphQL": {
+   "version": "1",
+   "stackOutputs": [
+    "awsAppsyncApiId",
+    "awsAppsyncApiEndpoint",
+    "awsAppsyncAuthenticationType",
+    "awsAppsyncRegion",
+    "amplifyApiModelSchemaS3Uri",
+    "awsAppsyncAdditionalAuthenticationTypes"
+   ]
   }
  },
  "Outputs": {
@@ -77,7 +88,7 @@
    "Value": "true"
   },
   "signupAttributes": {
-   "Value": "[\"email\"]"
+   "Value": "[\"email\",\"given_name\",\"family_name\"]"
   },
   "usernameAttributes": {
    "Value": "[\"email\"]"
@@ -128,6 +139,70 @@
   },
   "groups": {
    "Value": "[]"
+  },
+  "awsAppsyncApiId": {
+   "Value": {
+    "Fn::GetAtt": [
+     "data7552DF31",
+     "Outputs.amplifyanimesitecsanjosandbox462e1e2fb0dataamplifyDataGraphQLAPI80D278A2ApiId"
+    ]
+   }
+  },
+  "awsAppsyncApiEndpoint": {
+   "Value": {
+    "Fn::GetAtt": [
+     "data7552DF31",
+     "Outputs.amplifyanimesitecsanjosandbox462e1e2fb0dataamplifyDataGraphQLAPI80D278A2GraphQLUrl"
+    ]
+   }
+  },
+  "awsAppsyncAuthenticationType": {
+   "Value": "AMAZON_COGNITO_USER_POOLS"
+  },
+  "awsAppsyncRegion": {
+   "Value": {
+    "Ref": "AWS::Region"
+   }
+  },
+  "amplifyApiModelSchemaS3Uri": {
+   "Value": {
+    "Fn::Join": [
+     "",
+     [
+      "s3://",
+      {
+       "Fn::Select": [
+        0,
+        {
+         "Fn::Split": [
+          "/",
+          {
+           "Fn::Select": [
+            5,
+            {
+             "Fn::Split": [
+              ":",
+              {
+               "Fn::GetAtt": [
+                "data7552DF31",
+                "Outputs.amplifyanimesitecsanjosandbox462e1e2fb0dataamplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsDeploymentCustomResource1536MiBFAF93640DestinationBucketArn"
+               ]
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      "/model-schema.graphql"
+     ]
+    ]
+   }
+  },
+  "awsAppsyncAdditionalAuthenticationTypes": {
+   "Value": "AWS_IAM"
   }
  },
  "Resources": {
@@ -160,7 +235,7 @@
        {
         "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
        },
-       "/075f03ef0c86c75888ed53d563edd48d62db125240dee59b75fdf16baf5f816d.json"
+       "/f50ebfc8548406c68a662811a994a4765b2c781e6f337e8b26c3487f7a747318.json"
       ]
      ]
     }
@@ -170,6 +245,74 @@
    "Metadata": {
     "aws:cdk:path": "amplify-animesite-csanjo-sandbox-462e1e2fb0/auth.NestedStack/auth.NestedStackResource",
     "aws:asset:path": "amplifyanimesitecsanjosandbox462e1e2fb0auth2B9B06A0.nested.template.json",
+    "aws:asset:property": "TemplateURL"
+   }
+  },
+  "data7552DF31": {
+   "Type": "AWS::CloudFormation::Stack",
+   "Properties": {
+    "Parameters": {
+     "referencetoamplifyanimesitecsanjosandbox462e1e2fb0authNestedStackauthNestedStackResourceE9B861E8Outputsamplifyanimesitecsanjosandbox462e1e2fb0authamplifyAuthUserPool7FCA6A82Ref": {
+      "Fn::GetAtt": [
+       "auth179371D7",
+       "Outputs.amplifyanimesitecsanjosandbox462e1e2fb0authamplifyAuthUserPool7FCA6A82Ref"
+      ]
+     },
+     "referencetoamplifyanimesitecsanjosandbox462e1e2fb0authNestedStackauthNestedStackResourceE9B861E8Outputsamplifyanimesitecsanjosandbox462e1e2fb0authamplifyAuthauthenticatedUserRoleEC731A7CRef": {
+      "Fn::GetAtt": [
+       "auth179371D7",
+       "Outputs.amplifyanimesitecsanjosandbox462e1e2fb0authamplifyAuthauthenticatedUserRoleEC731A7CRef"
+      ]
+     },
+     "referencetoamplifyanimesitecsanjosandbox462e1e2fb0authNestedStackauthNestedStackResourceE9B861E8Outputsamplifyanimesitecsanjosandbox462e1e2fb0authamplifyAuthunauthenticatedUserRoleC2E47E7ERef": {
+      "Fn::GetAtt": [
+       "auth179371D7",
+       "Outputs.amplifyanimesitecsanjosandbox462e1e2fb0authamplifyAuthunauthenticatedUserRoleC2E47E7ERef"
+      ]
+     },
+     "referencetoamplifyanimesitecsanjosandbox462e1e2fb0authNestedStackauthNestedStackResourceE9B861E8Outputsamplifyanimesitecsanjosandbox462e1e2fb0authamplifyAuthIdentityPool3056D7B3Ref": {
+      "Fn::GetAtt": [
+       "auth179371D7",
+       "Outputs.amplifyanimesitecsanjosandbox462e1e2fb0authamplifyAuthIdentityPool3056D7B3Ref"
+      ]
+     }
+    },
+    "Tags": [
+     {
+      "Key": "amplify:deployment-type",
+      "Value": "sandbox"
+     },
+     {
+      "Key": "created-by",
+      "Value": "amplify"
+     }
+    ],
+    "TemplateURL": {
+     "Fn::Join": [
+      "",
+      [
+       "https://s3.",
+       {
+        "Ref": "AWS::Region"
+       },
+       ".",
+       {
+        "Ref": "AWS::URLSuffix"
+       },
+       "/",
+       {
+        "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
+       },
+       "/171d8ac0c5615921dd67e2a95f190e650698d77e7d775b62b081576ae8544450.json"
+      ]
+     ]
+    }
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-animesite-csanjo-sandbox-462e1e2fb0/data.NestedStack/data.NestedStackResource",
+    "aws:asset:path": "amplifyanimesitecsanjosandbox462e1e2fb0data0F55BE14.nested.template.json",
     "aws:asset:property": "TemplateURL"
    }
   },

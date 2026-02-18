@@ -1,0 +1,6 @@
+type Favorite @model @auth(rules: [{allow: owner, ownerField: "owner"}])
+{
+  animeId: Int!
+  title: String
+  imageUrl: String
+}

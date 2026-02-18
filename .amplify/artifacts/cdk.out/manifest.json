@@ -22,7 +22,7 @@
         "validateOnSynth": false,
         "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
         "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
-        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/c9e48c805296bd388c4538bb034bc97451bf8091274b7f3463c4f391dbec0ce0.json",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/df480cf34c599fc4b74ae7d7dd792463e0f7a0f3181bac17c0eef6c639278e5d.json",
         "requiresBootstrapStackVersion": 6,
         "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
         "additionalDependencies": [
@@ -129,6 +129,18 @@
           {
             "type": "aws:cdk:logicalId",
             "data": "amplifyanimesitecsanjosandbox462e1e2fb0authamplifyAuthIdentityPool3056D7B3Ref"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/auth/amplifyanimesitecsanjosandbox462e1e2fb0authamplifyAuthauthenticatedUserRoleEC731A7CRef": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyanimesitecsanjosandbox462e1e2fb0authamplifyAuthauthenticatedUserRoleEC731A7CRef"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/auth/amplifyanimesitecsanjosandbox462e1e2fb0authamplifyAuthunauthenticatedUserRoleC2E47E7ERef": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyanimesitecsanjosandbox462e1e2fb0authamplifyAuthunauthenticatedUserRoleC2E47E7ERef"
           }
         ],
         "/amplify-animesite-csanjo-sandbox-462e1e2fb0/auth.NestedStack/auth.NestedStackResource": [
@@ -261,6 +273,904 @@
           {
             "type": "aws:cdk:logicalId",
             "data": "groups"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/GraphQLAPI/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataGraphQLAPI42A6FA33"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/GraphQLAPI/TransformerSchema": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataGraphQLAPITransformerSchemaFF50A789"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/GraphQLAPI/NONE_DS": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "NONE_DS"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/GraphQLAPI/NONE_DS/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataGraphQLAPINONEDS684BF699"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "NONE_DS"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/AmplifyTableManager/AmplifyManagedTableIsCompleteRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AmplifyManagedTableIsCompleteRoleF825222C"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/AmplifyTableManager/AmplifyManagedTableOnEventRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AmplifyManagedTableOnEventRoleB4E71DEA"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/AmplifyTableManager/AmplifyManagedTableOnEventRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AmplifyManagedTableOnEventRoleDefaultPolicyF6DABCB6"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/AmplifyTableManager/TableManagerCustomProvider/framework-onEvent/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TableManagerCustomProviderframeworkonEvent1DFC2ECC"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/AmplifyTableManager/TableManagerCustomProvider/framework-isComplete/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TableManagerCustomProviderframeworkisComplete2E51021B"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/AmplifyTableManager/AmplifyTableWaiterStateMachine/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AmplifyTableWaiterStateMachineRole470BE899"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/AmplifyTableManager/AmplifyTableWaiterStateMachine/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AmplifyTableWaiterStateMachineRoleDefaultPolicy89F3836A"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/AmplifyTableManager/AmplifyTableWaiterStateMachine/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AmplifyTableWaiterStateMachine060600BC"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/AmplifyTableManager/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/AmplifyTableManager/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/AmplifyTableManager/reference-to-amplifyanimesitecsanjosandbox462e1e2fb0dataamplifyDataGraphQLAPI80D278A2ApiId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyanimesitecsanjosandbox462e1e2fb0dataamplifyDataGraphQLAPI80D278A2ApiId"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/AmplifyTableManager/amplifyanimesitecsanjosandbox462e1e2fb0dataamplifyDataAmplifyTableManagerTableManagerCustomProviderframeworkonEventBF16EBE0Arn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyanimesitecsanjosandbox462e1e2fb0dataamplifyDataAmplifyTableManagerTableManagerCustomProviderframeworkonEventBF16EBE0Arn"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/AmplifyTableManager.NestedStack/AmplifyTableManager.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataAmplifyTableManagerNestedStackAmplifyTableManagerNestedStackResource86290833"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/DynamoDBModelTableReadIOPS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBModelTableReadIOPS"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/DynamoDBModelTableWriteIOPS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBModelTableWriteIOPS"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/DynamoDBBillingMode": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBBillingMode"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/DynamoDBEnablePointInTimeRecovery": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBEnablePointInTimeRecovery"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/DynamoDBEnableServerSideEncryption": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBEnableServerSideEncryption"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/HasEnvironmentParameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HasEnvironmentParameter"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/ShouldUsePayPerRequestBilling": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ShouldUsePayPerRequestBilling"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/ShouldUsePointInTimeRecovery": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ShouldUsePointInTimeRecovery"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/FavoriteTable": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Favorite"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/FavoriteTable/Default/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "FavoriteTable"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Favorite"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/CustomTableFavoriteTable": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Favorite"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/GetAttFavoriteTableStreamArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GetAttFavoriteTableStreamArn"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/GetAttFavoriteTableName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GetAttFavoriteTableName"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/FavoriteIAMRole": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "FavoriteIAMRole"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/FavoriteIAMRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "FavoriteIAMRoleCFD0969B"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "FavoriteIAMRole"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/FavoriteDataSource": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "FavoriteTable"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/FavoriteDataSource/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "FavoriteDataSource"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "FavoriteTable"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/QuerygetFavoriteauth0Function/QuerygetFavoriteauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QuerygetFavoriteauth0FunctionQuerygetFavoriteauth0FunctionAppSyncFunction0017DC2C"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QuerygetFavoriteauth0Function"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/QuerygetFavoritepostAuth0Function/QuerygetFavoritepostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QuerygetFavoritepostAuth0FunctionQuerygetFavoritepostAuth0FunctionAppSyncFunctionAF95E985"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QuerygetFavoritepostAuth0Function"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/QueryGetFavoriteDataResolverFn/QueryGetFavoriteDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QueryGetFavoriteDataResolverFnQueryGetFavoriteDataResolverFnAppSyncFunctionAD49B195"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QueryGetFavoriteDataResolverFn"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/queryGetFavoriteResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GetFavoriteResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Query.getFavorite"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/QuerylistFavoritesauth0Function/QuerylistFavoritesauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QuerylistFavoritesauth0FunctionQuerylistFavoritesauth0FunctionAppSyncFunctionE298DB03"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QuerylistFavoritesauth0Function"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/QuerylistFavoritespostAuth0Function/QuerylistFavoritespostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QuerylistFavoritespostAuth0FunctionQuerylistFavoritespostAuth0FunctionAppSyncFunctionAE166D32"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QuerylistFavoritespostAuth0Function"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/QueryListFavoritesDataResolverFn/QueryListFavoritesDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QueryListFavoritesDataResolverFnQueryListFavoritesDataResolverFnAppSyncFunction5890D4D1"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QueryListFavoritesDataResolverFn"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/queryListFavoritesResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ListFavoriteResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Query.listFavorites"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/MutationcreateFavoriteinit0Function/MutationcreateFavoriteinit0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationcreateFavoriteinit0FunctionMutationcreateFavoriteinit0FunctionAppSyncFunction564B7039"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationcreateFavoriteinit0Function"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/MutationcreateFavoriteauth0Function/MutationcreateFavoriteauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationcreateFavoriteauth0FunctionMutationcreateFavoriteauth0FunctionAppSyncFunction8C165FE9"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationcreateFavoriteauth0Function"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/MutationcreateFavoritepostAuth0Function/MutationcreateFavoritepostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationcreateFavoritepostAuth0FunctionMutationcreateFavoritepostAuth0FunctionAppSyncFunction49A89AEE"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationcreateFavoritepostAuth0Function"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/MutationCreateFavoriteDataResolverFn/MutationCreateFavoriteDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationCreateFavoriteDataResolverFnMutationCreateFavoriteDataResolverFnAppSyncFunction691420DD"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationCreateFavoriteDataResolverFn"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/mutationCreateFavoriteResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CreateFavoriteResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Mutation.createFavorite"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/MutationupdateFavoriteinit0Function/MutationupdateFavoriteinit0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationupdateFavoriteinit0FunctionMutationupdateFavoriteinit0FunctionAppSyncFunction350A82BD"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationupdateFavoriteinit0Function"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/MutationupdateFavoriteauth0Function/MutationupdateFavoriteauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationupdateFavoriteauth0FunctionMutationupdateFavoriteauth0FunctionAppSyncFunction8DB30286"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationupdateFavoriteauth0Function"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/MutationupdateFavoritepostAuth0Function/MutationupdateFavoritepostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationupdateFavoritepostAuth0FunctionMutationupdateFavoritepostAuth0FunctionAppSyncFunction297890F1"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationupdateFavoritepostAuth0Function"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/MutationUpdateFavoriteDataResolverFn/MutationUpdateFavoriteDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationUpdateFavoriteDataResolverFnMutationUpdateFavoriteDataResolverFnAppSyncFunction6383BB86"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationUpdateFavoriteDataResolverFn"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/mutationUpdateFavoriteResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UpdateFavoriteResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Mutation.updateFavorite"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/MutationdeleteFavoriteauth0Function/MutationdeleteFavoriteauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationdeleteFavoriteauth0FunctionMutationdeleteFavoriteauth0FunctionAppSyncFunction4AB71C08"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationdeleteFavoriteauth0Function"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/MutationdeleteFavoritepostAuth0Function/MutationdeleteFavoritepostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationdeleteFavoritepostAuth0FunctionMutationdeleteFavoritepostAuth0FunctionAppSyncFunction78FDB119"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationdeleteFavoritepostAuth0Function"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/MutationDeleteFavoriteDataResolverFn/MutationDeleteFavoriteDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationDeleteFavoriteDataResolverFnMutationDeleteFavoriteDataResolverFnAppSyncFunction4A3A67A5"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationDeleteFavoriteDataResolverFn"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/mutationDeleteFavoriteResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeleteFavoriteResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Mutation.deleteFavorite"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/SubscriptiononCreateFavoriteauth0Function/SubscriptiononCreateFavoriteauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononCreateFavoriteauth0FunctionSubscriptiononCreateFavoriteauth0FunctionAppSyncFunctionE424D301"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononCreateFavoriteauth0Function"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/SubscriptiononCreateFavoritepostAuth0Function/SubscriptiononCreateFavoritepostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononCreateFavoritepostAuth0FunctionSubscriptiononCreateFavoritepostAuth0FunctionAppSyncFunctionD239EE5B"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononCreateFavoritepostAuth0Function"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/SubscriptionOnCreateFavoriteDataResolverFn/SubscriptionOnCreateFavoriteDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptionOnCreateFavoriteDataResolverFnSubscriptionOnCreateFavoriteDataResolverFnAppSyncFunctionD9B94207"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptionOnCreateFavoriteDataResolverFn"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/subscriptionOnCreateFavoriteResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononCreateFavoriteResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Subscription.onCreateFavorite"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/SubscriptiononUpdateFavoriteauth0Function/SubscriptiononUpdateFavoriteauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononUpdateFavoriteauth0FunctionSubscriptiononUpdateFavoriteauth0FunctionAppSyncFunction060B9C5B"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononUpdateFavoriteauth0Function"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/SubscriptiononUpdateFavoritepostAuth0Function/SubscriptiononUpdateFavoritepostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononUpdateFavoritepostAuth0FunctionSubscriptiononUpdateFavoritepostAuth0FunctionAppSyncFunction1F3FB2CA"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononUpdateFavoritepostAuth0Function"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/SubscriptionOnUpdateFavoriteDataResolverFn/SubscriptionOnUpdateFavoriteDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptionOnUpdateFavoriteDataResolverFnSubscriptionOnUpdateFavoriteDataResolverFnAppSyncFunction7886AF6B"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptionOnUpdateFavoriteDataResolverFn"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/subscriptionOnUpdateFavoriteResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononUpdateFavoriteResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Subscription.onUpdateFavorite"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/SubscriptiononDeleteFavoriteauth0Function/SubscriptiononDeleteFavoriteauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononDeleteFavoriteauth0FunctionSubscriptiononDeleteFavoriteauth0FunctionAppSyncFunctionCDA46824"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononDeleteFavoriteauth0Function"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/SubscriptiononDeleteFavoritepostAuth0Function/SubscriptiononDeleteFavoritepostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononDeleteFavoritepostAuth0FunctionSubscriptiononDeleteFavoritepostAuth0FunctionAppSyncFunction6D2BA222"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononDeleteFavoritepostAuth0Function"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/SubscriptionOnDeleteFavoriteDataResolverFn/SubscriptionOnDeleteFavoriteDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptionOnDeleteFavoriteDataResolverFnSubscriptionOnDeleteFavoriteDataResolverFnAppSyncFunction17BEC60B"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptionOnDeleteFavoriteDataResolverFn"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/subscriptionOnDeleteFavoriteResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononDeleteFavoriteResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Subscription.onDeleteFavorite"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/FavoriteOwnerDataResolverFn/FavoriteOwnerDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "FavoriteOwnerDataResolverFnFavoriteOwnerDataResolverFnAppSyncFunction4EED5F37"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "FavoriteOwnerDataResolverFn"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/favoriteOwnerResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "FavoriteownerResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Favorite.owner"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/reference-to-amplifyanimesitecsanjosandbox462e1e2fb0dataamplifyDataAmplifyTableManagerNestedStackAmplifyTableManagerNestedStackResource582739DFOutputs.amplifyanimesitecsanjosandbox462e1e2fb0dataamplifyDataAmplifyTableManagerTableManagerCustomProviderframeworkonEventBF16EBE0Arn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyanimesitecsanjosandbox462e1e2fb0dataamplifyDataAmplifyTableManagerNestedStackAmplifyTableManagerNestedStackResource582739DFOutputsamplifyanimesitecsanjosandbox462e1e2fb0dataamplifyDataAmplifyTableManagerTableManagerCustomP1BB7EF9B"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/reference-to-amplifyanimesitecsanjosandbox462e1e2fb0dataamplifyDataGraphQLAPI80D278A2ApiId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyanimesitecsanjosandbox462e1e2fb0dataamplifyDataGraphQLAPI80D278A2ApiId"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/reference-to-amplifyanimesitecsanjosandbox462e1e2fb0dataamplifyDataGraphQLAPINONEDSF8F6ECCEName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyanimesitecsanjosandbox462e1e2fb0dataamplifyDataGraphQLAPINONEDSF8F6ECCEName"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/reference-to-amplifyanimesitecsanjosandbox462e1e2fb0authNestedStackauthNestedStackResourceE9B861E8Outputs.amplifyanimesitecsanjosandbox462e1e2fb0authamplifyAuthauthenticatedUserRoleEC731A7CRef": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyanimesitecsanjosandbox462e1e2fb0authNestedStackauthNestedStackResourceE9B861E8Outputsamplifyanimesitecsanjosandbox462e1e2fb0authamplifyAuthauthenticatedUserRoleEC731A7CRef"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/reference-to-amplifyanimesitecsanjosandbox462e1e2fb0authNestedStackauthNestedStackResourceE9B861E8Outputs.amplifyanimesitecsanjosandbox462e1e2fb0authamplifyAuthunauthenticatedUserRoleC2E47E7ERef": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyanimesitecsanjosandbox462e1e2fb0authNestedStackauthNestedStackResourceE9B861E8Outputsamplifyanimesitecsanjosandbox462e1e2fb0authamplifyAuthunauthenticatedUserRoleC2E47E7ERef"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite/reference-to-amplifyanimesitecsanjosandbox462e1e2fb0authNestedStackauthNestedStackResourceE9B861E8Outputs.amplifyanimesitecsanjosandbox462e1e2fb0authamplifyAuthIdentityPool3056D7B3Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyanimesitecsanjosandbox462e1e2fb0authNestedStackauthNestedStackResourceE9B861E8Outputsamplifyanimesitecsanjosandbox462e1e2fb0authamplifyAuthIdentityPool3056D7B3Ref"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/Favorite.NestedStack/Favorite.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataFavoriteNestedStackFavoriteNestedStackResource429EB9FB"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsBucket9CCB4ACA"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsBucket/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsBucketPolicyF1C1C548"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsBucket/AutoDeleteObjectsCustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsBucketAutoDeleteObjectsCustomResource437F26F5"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsDeployment/AwsCliLayer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsDeploymentAwsCliLayerE322F905"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsDeployment/CustomResource-1536MiB/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsDeploymentCustomResource1536MiB21775929"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/DynamoDBModelTableReadIOPS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBModelTableReadIOPS"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/DynamoDBModelTableWriteIOPS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBModelTableWriteIOPS"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/DynamoDBBillingMode": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBBillingMode"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/DynamoDBEnablePointInTimeRecovery": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBEnablePointInTimeRecovery"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/DynamoDBEnableServerSideEncryption": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBEnableServerSideEncryption"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/Custom::S3AutoDeleteObjectsCustomResourceProvider": [
+          {
+            "type": "aws:cdk:is-custom-resource-handler-customResourceProvider",
+            "data": true
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/Custom::S3AutoDeleteObjectsCustomResourceProvider/Role": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/Custom::S3AutoDeleteObjectsCustomResourceProvider/Handler": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiB": [
+          {
+            "type": "aws:cdk:is-custom-resource-handler-singleton",
+            "data": true
+          },
+          {
+            "type": "aws:cdk:is-custom-resource-handler-runtime-family",
+            "data": 2
+          },
+          {
+            "type": "aws:cdk:is-custom-resource-handler-singleton",
+            "data": true
+          },
+          {
+            "type": "aws:cdk:is-custom-resource-handler-runtime-family",
+            "data": 2
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiB/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiBServiceRoleA41FC8C2"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiB/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiBServiceRoleDefaultPolicyFF1C635B"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiB/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiBC5D8AB21"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/modelIntrospectionSchemaBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "modelIntrospectionSchemaBucketF566B665"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/modelIntrospectionSchemaBucket/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "modelIntrospectionSchemaBucketPolicy4DAB0D15"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/modelIntrospectionSchemaBucket/AutoDeleteObjectsCustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "modelIntrospectionSchemaBucketAutoDeleteObjectsCustomResourceFE57309F"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/modelIntrospectionSchemaBucketDeployment/AwsCliLayer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "modelIntrospectionSchemaBucketDeploymentAwsCliLayer13C432F7"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/modelIntrospectionSchemaBucketDeployment/CustomResource-1536MiB/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "modelIntrospectionSchemaBucketDeploymentCustomResource1536MiB104B97EC"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/AMPLIFY_DATA_GRAPHQL_ENDPOINTParameter/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AMPLIFYDATAGRAPHQLENDPOINTParameter1C2CBB16"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/AMPLIFY_DATA_MODEL_INTROSPECTION_SCHEMA_BUCKET_NAMEParameter/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AMPLIFYDATAMODELINTROSPECTIONSCHEMABUCKETNAMEParameter47BF4F44"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/AMPLIFY_DATA_MODEL_INTROSPECTION_SCHEMA_KEYParameter/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AMPLIFYDATAMODELINTROSPECTIONSCHEMAKEYParameterB6AEAE8A"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/AMPLIFY_DATA_DEFAULT_NAMEParameter/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AMPLIFYDATADEFAULTNAMEParameterE7C23CC4"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/reference-to-amplifyanimesitecsanjosandbox462e1e2fb0authNestedStackauthNestedStackResourceE9B861E8Outputs.amplifyanimesitecsanjosandbox462e1e2fb0authamplifyAuthUserPool7FCA6A82Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyanimesitecsanjosandbox462e1e2fb0authNestedStackauthNestedStackResourceE9B861E8Outputsamplifyanimesitecsanjosandbox462e1e2fb0authamplifyAuthUserPool7FCA6A82Ref"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/reference-to-amplifyanimesitecsanjosandbox462e1e2fb0authNestedStackauthNestedStackResourceE9B861E8Outputs.amplifyanimesitecsanjosandbox462e1e2fb0authamplifyAuthauthenticatedUserRoleEC731A7CRef": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyanimesitecsanjosandbox462e1e2fb0authNestedStackauthNestedStackResourceE9B861E8Outputsamplifyanimesitecsanjosandbox462e1e2fb0authamplifyAuthauthenticatedUserRoleEC731A7CRef"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/reference-to-amplifyanimesitecsanjosandbox462e1e2fb0authNestedStackauthNestedStackResourceE9B861E8Outputs.amplifyanimesitecsanjosandbox462e1e2fb0authamplifyAuthunauthenticatedUserRoleC2E47E7ERef": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyanimesitecsanjosandbox462e1e2fb0authNestedStackauthNestedStackResourceE9B861E8Outputsamplifyanimesitecsanjosandbox462e1e2fb0authamplifyAuthunauthenticatedUserRoleC2E47E7ERef"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/reference-to-amplifyanimesitecsanjosandbox462e1e2fb0authNestedStackauthNestedStackResourceE9B861E8Outputs.amplifyanimesitecsanjosandbox462e1e2fb0authamplifyAuthIdentityPool3056D7B3Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyanimesitecsanjosandbox462e1e2fb0authNestedStackauthNestedStackResourceE9B861E8Outputsamplifyanimesitecsanjosandbox462e1e2fb0authamplifyAuthIdentityPool3056D7B3Ref"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyanimesitecsanjosandbox462e1e2fb0dataamplifyDataGraphQLAPI80D278A2ApiId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyanimesitecsanjosandbox462e1e2fb0dataamplifyDataGraphQLAPI80D278A2ApiId"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyanimesitecsanjosandbox462e1e2fb0dataamplifyDataGraphQLAPI80D278A2GraphQLUrl": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyanimesitecsanjosandbox462e1e2fb0dataamplifyDataGraphQLAPI80D278A2GraphQLUrl"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data/amplifyanimesitecsanjosandbox462e1e2fb0dataamplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsDeploymentCustomResource1536MiBFAF93640DestinationBucketArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyanimesitecsanjosandbox462e1e2fb0dataamplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsDeploymentCustomResource1536MiBFAF93640DestinationBucketArn"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/data.NestedStack/data.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "data7552DF31"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/awsAppsyncApiId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awsAppsyncApiId"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/awsAppsyncApiEndpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awsAppsyncApiEndpoint"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/awsAppsyncAuthenticationType": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awsAppsyncAuthenticationType"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/awsAppsyncRegion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awsAppsyncRegion"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/amplifyApiModelSchemaS3Uri": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyApiModelSchemaS3Uri"
+          }
+        ],
+        "/amplify-animesite-csanjo-sandbox-462e1e2fb0/awsAppsyncAdditionalAuthenticationTypes": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awsAppsyncAdditionalAuthenticationTypes"
           }
         ],
         "/amplify-animesite-csanjo-sandbox-462e1e2fb0/CDKMetadata/Default": [

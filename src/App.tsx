@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar"
 import Home from "./pages/Home";
 import AnimeShow from "./pages/AnimeShow";
 import GenreShow from "./pages/GenreShow";
+import MyFavorites from "./pages/MyFavorites";
 import MyPage from "./pages/MyPage";
 import { Authenticator } from "@aws-amplify/ui-react";
 import "@aws-amplify/ui-react/styles.css";
@@ -22,6 +23,7 @@ function App() {
                 <Route path="/anime/:id" element={<AnimeShow />} />  
                 <Route path="/genres" element={<GenreShow/>} />  
                 <Route path="/mypage" element={<MyPage/>} />  
+                <Route path="/myfavorites" element={<MyFavorites/>} />  
               </Routes>
             </main>
             <footer className="footer">

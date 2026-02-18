@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { getAnimeById } from "../api/animeService"; 
 import type { BannerAnime } from "../api/animeService";
 import "./AnimeShow.css"
+import { client } from "../lib/amplifyClient";
 
 const AnimeShow = () => {
   const { id } = useParams<{ id: string }>();
@@ -17,6 +18,16 @@ const AnimeShow = () => {
   }, [id]);
 
   if (!anime) return <p>Loading...</p>;
+
+  const saveFavorite = async () => {
+    await client.models.Favorite.create({
+      animeId: anime.mal_id,
+      title: anime.title_japanese,
+      imageUrl: anime.image
+    });
+
+    alert("Saved to favorites!");
+  };
   
   return (
     <div className="anime-show">
@@ -42,6 +53,10 @@ const AnimeShow = () => {
           </a>
         </p>
       )}
+
+      <button onClick={saveFavorite}>
+        ❤️ Favorite
+      </button>
     </div>
   );
 };

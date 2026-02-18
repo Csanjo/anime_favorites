@@ -34,6 +34,16 @@
       "Mutable": true,
       "Name": "email",
       "Required": true
+     },
+     {
+      "Mutable": true,
+      "Name": "given_name",
+      "Required": true
+     },
+     {
+      "Mutable": true,
+      "Name": "family_name",
+      "Required": true
      }
     ],
     "SmsVerificationMessage": "The verification code to your new account is {####}",
@@ -589,6 +599,16 @@
   "amplifyanimesitecsanjosandbox462e1e2fb0authamplifyAuthIdentityPool3056D7B3Ref": {
    "Value": {
     "Ref": "amplifyAuthIdentityPool3FDE84CC"
+   }
+  },
+  "amplifyanimesitecsanjosandbox462e1e2fb0authamplifyAuthauthenticatedUserRoleEC731A7CRef": {
+   "Value": {
+    "Ref": "amplifyAuthauthenticatedUserRoleD8DA3689"
+   }
+  },
+  "amplifyanimesitecsanjosandbox462e1e2fb0authamplifyAuthunauthenticatedUserRoleC2E47E7ERef": {
+   "Value": {
+    "Ref": "amplifyAuthunauthenticatedUserRole2B524D9E"
    }
   }
  }
