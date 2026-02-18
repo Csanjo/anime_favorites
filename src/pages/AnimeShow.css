@@ -18,3 +18,40 @@
   height: 400px;
   width: 280px;
 }
+
+.anime-image {
+  position: relative;
+  display: inline-block;
+}
+
+.anime-image img {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.favorite-btn {
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  border-radius: 50%;
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background-color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  opacity: 0.5;
+  transition: opacity 0.2s ease;
+}
+
+.favorite-btn:hover {
+  opacity: 1;
+}

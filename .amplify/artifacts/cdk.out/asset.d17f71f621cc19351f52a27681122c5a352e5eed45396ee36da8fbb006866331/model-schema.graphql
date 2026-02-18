@@ -1,0 +1,7 @@
+type Favorite @model @auth(rules: [{allow: owner, ownerField: "owner"}])
+{
+  userId: String! @primaryKey(sortKeyFields: ["animeId"])
+  animeId: Int!
+  title: String
+  imageUrl: String
+}

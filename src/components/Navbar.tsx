@@ -61,9 +61,9 @@ const Navbar = ({ signOut}: NavbarProps) => {
       </div>
       <div className="navbar-right">
         <div className="user-icon">
-          <button onClick={() => setOpen(!open)}>
+          <div onClick={() => setOpen(!open)}>
             <img src={ myPage } alt="" />
-          </button>
+          </div>
 
           {open && (
             <div className="user-popover">

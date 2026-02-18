@@ -4,6 +4,7 @@ const schema = a.schema({
 
   Favorite: a
     .model({
+      userId: a.string().required(),
       animeId: a.integer().required(),
       title: a.string(),
       imageUrl: a.string(),
@@ -11,7 +12,7 @@ const schema = a.schema({
     .authorization((allow) => [
       allow.owner()
     ])
-
+    .identifier(["userId", "animeId"])
 });
 
 export type Schema = ClientSchema<typeof schema>;

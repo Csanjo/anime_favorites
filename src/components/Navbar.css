@@ -14,7 +14,7 @@
 .navbar-left {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 32px;
 }
 
 .navbar-container img {
@@ -25,6 +25,8 @@
 .genre-btn {
   cursor: pointer;
 }
+
+
 
 .user-info-btn{
   all:unset;
@@ -47,4 +49,8 @@
   border-radius: 6px;
   padding: 6px 0;
   min-width: 160px;
+}
+
+.user-icon{
+  cursor: pointer;
 }

@@ -2,6 +2,7 @@ import "./Category.css"
 import { useEffect, useState } from "react";
 import { getAnimeByGenre } from "../api/animeGenre"; 
 import type { JikanAnime } from "../api/animeGenre";
+import { Link } from "react-router-dom"
 
 type Props = {
   genreId: number;
@@ -27,12 +28,14 @@ const SubCategory = ({ genreId, title}: Props) => {
         <div className="sub-anime-card-list">
           {animeList.map((anime) => (
               <div key={anime.mal_id} className="sub-anime-card">
-                <img
-                  src={anime.images.jpg.image_url}
-                  alt={anime.title}
-                  loading="lazy"
-                  className="anime-image"
-                />
+                <Link to={`/anime/${anime.mal_id}`}>
+                  <img
+                    src={anime.images.jpg.image_url}
+                    alt={anime.title}
+                    loading="lazy"
+                    className="anime-image"
+                  />
+                </Link>
               </div>
             ))}
           </div>

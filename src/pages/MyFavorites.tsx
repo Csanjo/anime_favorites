@@ -1,6 +1,9 @@
+import "./MyFavorites.css"
 import { useEffect, useState } from "react"
 import { client } from "../lib/amplifyClient";
 import type { Schema } from "../../amplify/data/resource";
+import { getCurrentUser } from "aws-amplify/auth";
+
 
 type Favorite = Schema["Favorite"]["type"];
 
@@ -9,28 +12,48 @@ const MyFavorites = () => {
   const [favorites, setFavorites] = useState<Favorite[]>([]);
 
   useEffect(() => {
+
     const load = async () => {
 
-      const result = await client.models.Favorite.list();
+      try {
 
-      setFavorites(result.data);
+        const user = await getCurrentUser();
+
+        const result = await client.models.Favorite.list({
+
+          filter: {
+            userId: {
+              eq: user.userId
+            }
+          }
+        });
+        setFavorites(result.data);
+      } catch (error) {
+        console.log("User not logged in", error);
+      }
+
     };
-
     load();
   }, []);
   return (
     <>
-      <div>
+      <div className="container">
 
         <h1>My Favorites</h1>
 
-        {favorites.map((fav: any) => (
+        {favorites.length === 0 ? (
 
-          <div key={fav.id}>
-            {fav.title}
-          </div>
+          <div>No Favorites...</div>
 
-        ))}
+        ) : (
+
+          favorites.map((fav) => (
+            <div key={fav.animeId}>
+              {fav.title}
+            </div>
+          ))
+
+        )}
 
       </div>
     </>
